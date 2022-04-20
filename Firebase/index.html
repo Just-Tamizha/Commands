@@ -6,33 +6,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Firebase</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="../Source/command.svg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Akshar:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1 style="text-align: center;"><a href="../index.html" style="text-decoration: none;color: black;">CMDs</a></h1>
+    <h1 style="text-align: center;"><a href="../index.html" style="text-decoration: none;color: black;font-family: 'Akshar', sans-serif;">CMDs</a></h1>
+    <h3><a href="./Issues/index.html">Issues</a></h3>
     <ul style="list-style:decimal;line-height: 50px;">
         <li><b>Install Firebase Tools in Node JS</b>
             <ul style="list-style:none;line-height: 30px;">
-                <li>node install -g firebase-tools<button style="margin-left: 10px;"><i class="fa fa-clipboard"onclick="CopyText1()"></i></button></li>
+                <li>node install -g firebase-tools<button style="margin-left: 10px;"><i class="fa fa-clipboard"onclick="CopyText1()"></i></button><i class="fa fa-check" aria-hidden="false" style="margin-left: 10px;visibility:hidden;" id="CopyText1"></i></li>
             </ul>
         </li>
-        <li><b>Firebaser Login</b>
+        <li><b>Firebase Login</b>
             <ul style="list-style:none;line-height: 30px;">
-                <li>firebase login<button style="margin-left: 10px;"><i class="fa fa-clipboard"onclick="CopyText2()"></i></button></li>
+                <li>firebase login<button style="margin-left: 10px;"><i class="fa fa-clipboard"onclick="CopyText2()"></i></button></i></button><i class="fa fa-check" aria-hidden="false" style="margin-left: 10px;visibility:hidden;" id="CopyText2"></i></li>
             </ul>
         </li>
         <li><b>Install Project from firebase</b>
             <ul style="list-style:none;line-height: 30px;">
-                <li>firebase init<button style="margin-left: 10px;"><i class="fa fa-clipboard"onclick="CopyText3()"></i></button></li>
+                <li>firebase init<button style="margin-left: 10px;"><i class="fa fa-clipboard"onclick="CopyText3()"></i></button></i></button><i class="fa fa-check" aria-hidden="false" style="margin-left: 10px;visibility:hidden;" id="CopyText3"></i></li>
             </ul>
         </li>
         <li><b>Firebase deploy Project to Host</b>
             <ul style="list-style:none;line-height: 30px;">
-                <li>firebase deploy<button style="margin-left: 10px;"><i class="fa fa-clipboard"onclick="CopyText4()"></i></button></li>
+                <li>firebase deploy<button style="margin-left: 10px;"><i class="fa fa-clipboard"onclick="CopyText4()"></i></button></i></button><i class="fa fa-check" aria-hidden="false" style="margin-left: 10px;visibility:hidden;" id="CopyText4"></i></li>
             </ul>
         </li>
         <li><b>Firebase Emulator Start</b>
             <ul style="list-style:none;line-height: 30px;">
-                <li>firebase emulators:start<button style="margin-left: 10px;"><i class="fa fa-clipboard"onclick="CopyText5()"></i></button></li>
+                <li>firebase emulators:start<button style="margin-left: 10px;"><i class="fa fa-clipboard"onclick="CopyText5()"></i></button></i></button><i class="fa fa-check" aria-hidden="false" style="margin-left: 10px;visibility:hidden;" id="CopyText5"></i></li>
             </ul>
         </li>
 
@@ -40,19 +45,19 @@
     <!-- Script File -->
     <script>
         function CopyText1(){
-            var CopyText1 = "node install -g firebase-tools";navigator.clipboard.writeText(CopyText1)
+            var CopyText1 = "node install -g firebase-tools";navigator.clipboard.writeText(CopyText1);document.getElementById('CopyText1').style.visibility='visible'
         }
         function CopyText2(){
-            var CopyText2 = "firebase login";navigator.clipboard.writeText(CopyText2)
+            var CopyText2 = "firebase login";navigator.clipboard.writeText(CopyText2);document.getElementById('CopyText2').style.visibility='visible'
         }
         function CopyText3(){
-            var CopyText3 = "firebase init";navigator.clipboard.writeText(CopyText3)
+            var CopyText3 = "firebase init";navigator.clipboard.writeText(CopyText3);document.getElementById('CopyText3').style.visibility='visible'
         }
         function CopyText4(){
-            var CopyText4 = "fiebase deploy";navigator.clipboard.writeText(CopyText4)
+            var CopyText4 = "fiebase deploy";navigator.clipboard.writeText(CopyText4);document.getElementById('CopyText4').style.visibility='visible'
         }
         function CopyText5(){
-            var CopyText5 = "firebase emulators:start";navigator.clipboard.writeText(CopyText5)
+            var CopyText5 = "firebase emulators:start";navigator.clipboard.writeText(CopyText5);document.getElementById('CopyText5').style.visibility='visible'
         }
 
 
